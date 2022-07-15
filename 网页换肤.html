@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .red {
+            width: 20px;
+            height: 20px;
+            background: red;
+            cursor: pointer;
+        }
+
+        .green {
+            width: 20px;
+            height: 20px;
+            background: green;
+            margin: 0 10px;
+            cursor: pointer;
+
+        }
+
+        .black {
+            width: 20px;
+            height: 20px;
+            background: black;
+            cursor: pointer;
+
+        }
+
+        .ul2 {
+            display: flex;
+            list-style: none;
+
+        }
+
+        table {
+            width: 600px;
+            border: 1px solid green;
+        }
+
+        th {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="el">
+        <ul>
+            <li class="red"></li>
+            <li class="green"></li>
+            <li class="black"></li>
+        </ul>
+        <!-- nav -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>新闻</th>
+                    <th>娱乐</th>
+                    <th>体育</th>
+                    <th>电影</th>
+                    <th>音乐</th>
+                    <th>旅游</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script>
+        var body = document.querySelector('body');
+        var red = document.querySelector('.red').onclick = function () {
+            body.style.background = 'red'
+        }
+        var green = document.querySelector('.green').onclick = function () {
+            body.style.background = 'green'
+        }
+        var black = document.querySelector('.black').onclick = function () {
+            body.style.background = 'black'
+        }
+    </script>
+</body>
+
+</html>
