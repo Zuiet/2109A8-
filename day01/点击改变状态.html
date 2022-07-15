@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .el {
+            width: 100%;
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            margin: 10px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="el">
+        <!-- 按钮 -->
+        <div class="btn">
+            <button class="width">变宽</button>
+            <button class="height">变高</button>
+            <button class="color">变色</button>
+            <button class="none">隐藏</button>
+            <button class="agin">重置</button>
+        </div>
+        <div class="box"></div>
+    </div>
+    <script>
+        var box = document.querySelector('.box');//获取盒子
+        var width = document.querySelector('.width');//宽度改变
+        var height = document.querySelector('.height');//高度改变
+        var color = document.querySelector('.color');//颜色改变
+        var none = document.querySelector('.none');//隐藏显示
+        var agin = document.querySelector('.agin');//重置
+        width.onclick = function () {//宽度改变
+            box.style.width = '200px';
+        }
+        height.onclick = function () {///高度改变
+            box.style.height = '200px';
+        }
+        color.onclick = function () {///颜色改变
+            box.style.background = 'red';
+        }
+        none.onclick = function () {//隐藏显示
+            box.style.display = 'none';
+        }
+        agin.onclick = function () {//重置
+            box.style.width = '100px';
+            box.style.height = '100px';
+            box.style.background = 'pink';
+            box.style.display = 'block';
+        }
+
+    </script>
+</body>
+
+</html>
